@@ -16,3 +16,17 @@ html, body {
   --lg: 1024px;
 }
 
+/* Chrome, Safari, Edge (WebKit) */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Fallback for old IE */
+body {
+  -ms-overflow-style: none;
+}

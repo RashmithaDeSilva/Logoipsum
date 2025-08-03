@@ -73,7 +73,7 @@ const handleBackdropClick = (e) => {
 /* NAVBAR STYLES */
 .navbar {
   background-color: black;
-  padding: 1.5rem 2rem;
+  padding: 2rem 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -169,13 +169,19 @@ const handleBackdropClick = (e) => {
 }
 
 /* RESPONSIVE BEHAVIOR */
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .nav-items {
     display: none;
   }
 
   .hamburger {
     display: block;
+  }
+}
+
+@media (max-width: 1536px) {
+  .navbar {
+    padding: 2rem 2rem;
   }
 }
 </style>
