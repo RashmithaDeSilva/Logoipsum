@@ -21,11 +21,13 @@
 
 h1 {
   color: white;
+  font-size: 2.5rem;
 }
 
 h4 {
   width: 100%; /* Default: mobile */
-  color: rgb(190, 188, 188);
+  color: grey;
+  font-size: 1.25rem;
 }
 
 /* Tablet: ≥768px */
@@ -42,7 +44,6 @@ h4 {
   }
 }
 
-/* Optional: adjust padding for very large screens */
 @media (min-width: 1536px) {
   .intro-section {
     padding: 5rem 10rem;

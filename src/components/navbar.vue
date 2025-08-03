@@ -77,7 +77,7 @@ const handleBackdropClick = (e) => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgb(190, 188, 188);
+  color: grey;
   position: relative;
 }
 
