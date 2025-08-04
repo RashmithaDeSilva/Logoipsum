@@ -1,14 +1,16 @@
 <script setup>
+import { ref } from 'vue';
 import twitter from '../assets/Icons/Twitter White.svg';
 import youtube from '../assets/Icons/Youtube White.svg';
 
+const currentYear = ref(new Date().getFullYear());
 </script>
 
 
 <template>
     <footer>
         <div class="footer-box">
-            <div>
+            <div class="box-top-left">
                 <h1>Amadeus IT Group</h1>
                 <p>C. Salvador de Madariaga, 1</p>
                 <p>28027 Madrid</p>
@@ -29,7 +31,7 @@ import youtube from '../assets/Icons/Youtube White.svg';
 
         <div class="footer-box box-bottom">
             <div>
-                <p>Copyright © 2022 Amadeus Hotels. All rights reserved.</p>
+                <p>Copyright © {{ currentYear }} Amadeus Hotels. All rights reserved.</p>
             </div>
             <div>
                 <p>Photos by Felix Mooneeram & Serge Kutuzov on Unsplash</p>
@@ -46,7 +48,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    background-color: rgb(48, 45, 45);
+    background-color: rgb(36, 34, 34);
     color: white;
 }
 .footer-box {
@@ -61,6 +63,11 @@ footer {
 .box-top-right {
     display: flex;
     gap: 1rem;
+}
+.box-top-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 @media (max-width: 640px) {
     footer {
